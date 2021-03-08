@@ -17,4 +17,8 @@
 	<!-- vendor/lineage -->
         <remove-project name="LineageOS/android_vendor_lineage" />
         <project name="los-modded/android_vendor_lineage" path="vendor/lineage" remote="github" />
+
+	<!-- wlan -->
+        <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+        <project name="los-modded/android_hardware_qcom_wlan" path="hardware/qcom-caf/wlan" remote="github" revision="lineage-18.1-caf" />
 </manifest>
