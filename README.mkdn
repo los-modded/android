@@ -13,7 +13,7 @@ repo init -u git://github.com/los-modded/android.git -b lineage-18.1
 ```
 Then to sync up:
 ```
-repo sync
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
 ```
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
