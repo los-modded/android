@@ -2,7 +2,9 @@
 <manifest>
 	<!-- remotes -->
 	<remote name="gitea" fetch="https://gitea.kiam001.tk/electimon" />
-        
+        <remote name="pixel" fetch="https://github.com/PixelExperience" revision="eleven" review="gerrit.pixelexperience.org" />
+	<remote name="pixel-gitlab" fetch="https://gitlab.pixelexperience.org/android" revision="eleven" />
+
 	<!-- gapps -->
 	<project path="vendor/partner_gms" name="partner_gms" remote="gitea" revision="2021" />
 	<project path="vendor/partner_modules" name="partner_modules" remote="gitea" revision="2021" />
@@ -21,4 +23,14 @@
 	<!-- wlan -->
         <remove-project name="LineageOS/android_hardware_qcom_wlan" />
         <project name="los-modded/android_hardware_qcom_wlan" path="hardware/qcom-caf/wlan" remote="github" revision="lineage-18.1-caf" />
+
+	<!-- core -->
+	<remove-project name="LineageOS/android_frameworks_base" />
+	<remove-project name="LineageOS/android_packages_apps_Settings" />
+	<project path="frameworks/base" name="los-modded/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+	<project path="packages/apps/Settings" name="los-modded/android_packages_apps_Settings" groups="pdk-fs" />
+
+	<!-- faceunlock -->
+        <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
+	<project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
 </manifest>
