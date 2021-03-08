@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- remotes -->
+	<remote name="gitea" fetch="https://gitea.kiam001.tk/electimon" />
+        
+	<!-- gapps -->
+	<project path="vendor/partner_gms" name="partner_gms" remote="gitea" revision="2021" />
+	<project path="vendor/partner_modules" name="partner_modules" remote="gitea" revision="2021" />
+
+	<!-- vendor/customization -->
+	<project name="los-modded/vendor_customization" path="vendor/customization" remote="github" />
+
+	<!-- launcher -->
+  	<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+	<project name="los-modded/android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="rvc" />
+
+	<!-- vendor/lineage -->
+        <remove-project name="LineageOS/android_vendor_lineage" />
+        <project name="los-modded/android_vendor_lineage" path="vendor/lineage" remote="github" />
+</manifest>
