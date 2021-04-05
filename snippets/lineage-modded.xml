@@ -8,6 +8,7 @@
         <remote name="gitlab" fetch="https://gitlab.com/" />
         <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
         <remote name="ice" fetch="https://github.com/Project-1CE" revision="lineage-18.1" />
+        <remote name="exthm" fetch="https://github.com/exTHmUI" revision="refs/heads/exthm-11" />
 
 	<!-- gapps -->
 	<project path="vendor/partner_gms" name="partner_gms" remote="gitea" revision="2021" />
@@ -69,4 +70,7 @@
 
         <!-- libgdx -->
         <project path="external/libgdx" name="los-modded/external_libgdx" />
+
+        <!-- exTHmUI -->
+        <project path="packages/apps/GamingMode" name="android_packages_apps_GamingMode" remote="exthm" />
 </manifest>
