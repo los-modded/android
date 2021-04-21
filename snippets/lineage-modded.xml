@@ -4,6 +4,7 @@
 	<remote name="gitea" fetch="https://gitea.kiam001.tk/electimon" />
         <remote name="pixel" fetch="https://github.com/PixelExperience" revision="eleven" review="gerrit.pixelexperience.org" />
 	<remote name="pixel-gitlab" fetch="https://gitlab.pixelexperience.org/android" revision="eleven" />
+        <remote name="sakura" fetch="https://github.com/ProjectSakura" revision="11" />
 
 	<!-- gapps -->
 	<project path="vendor/partner_gms" name="partner_gms" remote="gitea" revision="2021" />
@@ -39,4 +40,7 @@
 	<!-- faceunlock -->
         <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
 	<project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
+
+        <!-- stitchimage -->
+        <project path="external/asus/stitchimage" name="external_asus_stitchimage" groups="pdk-fs" remote="sakura"/>
 </manifest>
