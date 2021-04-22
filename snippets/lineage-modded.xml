@@ -6,6 +6,8 @@
 	<remote name="pixel-gitlab" fetch="https://gitlab.pixelexperience.org/android" revision="eleven" />
         <remote name="sakura" fetch="https://github.com/ProjectSakura" revision="11" />
         <remote name="gitlab" fetch="https://gitlab.com/" />
+        <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
+        <remote name="ice" fetch="https://github.com/Project-1CE" revision="lineage-18.1" />
 
 	<!-- gapps -->
 	<project path="vendor/partner_gms" name="partner_gms" remote="gitea" revision="2021" />
@@ -32,15 +34,19 @@
 	<remove-project name="LineageOS/android_frameworks_base" />
 	<remove-project name="LineageOS/android_frameworks_native" />
 	<remove-project name="LineageOS/android_frameworks_opt_telephony" />
+	<remove-project name="platform/libcore" />
 	<remove-project name="LineageOS/android_packages_apps_Settings" />
 	<remove-project name="LineageOS/android_system_core" />
+	<remove-project name="platform/prebuilts/abi-dumps/vndk" />
 	<project path="art" name="los-modded/android_art" groups="pdk" />
 	<project path="build/soong" name="los-modded/android_build_soong" groups="pdk,tradefed" />
 	<project path="frameworks/base" name="los-modded/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
 	<project path="frameworks/native" name="los-modded/android_frameworks_native" groups="pdk" />
 	<project path="frameworks/opt/telephony" name="los-modded/android_frameworks_opt_telephony" groups="pdk" />
+	<project path="libcore" name="los-modded/android_libcore" groups="pdk" />
 	<project path="packages/apps/Settings" name="los-modded/android_packages_apps_Settings" groups="pdk-fs" />
 	<project path="system/core" name="los-modded/android_system_core" groups="pdk" />
+        <project path="prebuilts/abi-dumps/vndk" name="los-modded/android_prebuilts_abi-dumps_vndk" groups="pdk-fs" clone-depth="1" />
 
 	<!-- faceunlock -->
         <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
@@ -48,4 +54,14 @@
 
         <!-- stitchimage -->
         <project path="external/asus/stitchimage" name="external_asus_stitchimage" groups="pdk-fs" remote="sakura"/>
+
+        <!-- ProtonAOSP -->
+        <remove-project name="platform/external/libpng" />
+        <remove-project name="platform/system/security" />
+        <project name="android_external_libpng" path="external/libpng" remote="proton" groups="pdk" />
+        <project name="android_system_security" path="system/security" remote="proton" groups="pdk" />
+
+        <!-- Project 1CE -->
+        <remove-project name="platform/external/arm-optimized-routines" />
+        <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ice" />
 </manifest>
