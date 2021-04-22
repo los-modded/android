@@ -27,12 +27,14 @@
         <project name="los-modded/android_hardware_qcom_wlan" path="hardware/qcom-caf/wlan" remote="github" revision="lineage-18.1-caf" />
 
 	<!-- core -->
+	<remove-project name="LineageOS/android_art" />
 	<remove-project name="LineageOS/android_build_soong" />
 	<remove-project name="LineageOS/android_frameworks_base" />
 	<remove-project name="LineageOS/android_frameworks_native" />
 	<remove-project name="LineageOS/android_frameworks_opt_telephony" />
 	<remove-project name="LineageOS/android_packages_apps_Settings" />
 	<remove-project name="LineageOS/android_system_core" />
+	<project path="art" name="los-modded/android_art" groups="pdk" />
 	<project path="build/soong" name="los-modded/android_build_soong" groups="pdk,tradefed" />
 	<project path="frameworks/base" name="los-modded/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
 	<project path="frameworks/native" name="los-modded/android_frameworks_native" groups="pdk" />
