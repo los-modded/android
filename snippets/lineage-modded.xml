@@ -41,7 +41,10 @@
 	<remove-project name="platform/prebuilts/abi-dumps/vndk" />
 	<project path="art" name="los-modded/android_art" groups="pdk" />
 	<project path="bionic" name="los-modded/android_bionic" groups="pdk" />
-	<project path="build/soong" name="los-modded/android_build_soong" groups="pdk,tradefed" />
+	<project path="build/soong" name="los-modded/android_build_soong" groups="pdk,tradefed" >
+	  <linkfile src="root.bp" dest="Android.bp" />
+	  <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+	</project>
 	<project path="frameworks/base" name="los-modded/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
 	<project path="frameworks/native" name="los-modded/android_frameworks_native" groups="pdk" />
 	<project path="frameworks/opt/telephony" name="los-modded/android_frameworks_opt_telephony" groups="pdk" />
