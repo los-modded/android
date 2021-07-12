@@ -72,4 +72,8 @@
 
         <!-- libgdx -->
         <project path="external/libgdx" name="los-modded/external_libgdx" />
+
+        <!-- recovery -->
+        <remove-project name="LineageOS/android_bootable_recovery"/>
+        <project path="bootable/recovery" name="los-modded/android_bootable_recovery" />
 </manifest>
