@@ -76,4 +76,9 @@
         <!-- recovery -->
         <remove-project name="LineageOS/android_bootable_recovery"/>
         <project path="bootable/recovery" name="los-modded/android_bootable_recovery" />
+
+        <!-- f/av -->
+        <remove-project name="LineageOS/android_frameworks_av"/>
+        <project path="frameworks/av" name="los-modded/android_frameworks_av" groups="pdk" />
+
 </manifest>
