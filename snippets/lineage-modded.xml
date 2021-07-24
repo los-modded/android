@@ -84,4 +84,7 @@
         <!-- GamingMode -->
         <project path="packages/apps/GamingMode" name="los-modded/android_packages_apps_GamingMode" />
 
+        <!-- ModSettings -->
+        <project path="packages/apps/ModSettings" name="los-modded/android_packages_apps_ModSettings" />
+
 </manifest>
