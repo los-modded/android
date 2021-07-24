@@ -81,4 +81,7 @@
         <remove-project name="LineageOS/android_frameworks_av"/>
         <project path="frameworks/av" name="los-modded/android_frameworks_av" groups="pdk" />
 
+        <!-- GamingMode -->
+        <project path="packages/apps/GamingMode" name="los-modded/android_packages_apps_GamingMode" />
+
 </manifest>
