@@ -9,10 +9,6 @@
         <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
         <remote name="ice" fetch="https://github.com/Project-1CE" revision="lineage-18.1" />
 
-	<!-- gapps -->
-	<project path="vendor/partner_gms" name="partner_gms" remote="gitea" revision="2021" />
-	<project path="vendor/partner_modules" name="partner_modules" remote="gitea" revision="2021" />
-
 	<!-- vendor/customization -->
 	<project name="los-modded/vendor_customization" path="vendor/customization" remote="gitlab" revision="lineage-18.1" />
 
@@ -82,5 +78,8 @@
 
         <!-- ModSettings -->
         <project path="packages/apps/ModSettings" name="los-modded/android_packages_apps_ModSettings" />
+
+        <!-- MotoActions by nift4 -->
+        <project path="packages/apps/MotoActions" name="los-modded/android_packages_apps_MotoActions" />
 
 </manifest>
