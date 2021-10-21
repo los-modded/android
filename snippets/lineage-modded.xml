@@ -7,7 +7,6 @@
         <remote name="sakura" fetch="https://github.com/ProjectSakura" revision="11" />
         <remote name="gitlab" fetch="https://gitlab.com/" />
         <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
-        <remote name="ice" fetch="https://github.com/Project-1CE" revision="lineage-18.1" />
 
 	<!-- vendor/customization -->
 	<project name="los-modded/vendor_customization" path="vendor/customization" remote="gitlab" revision="lineage-18.1" />
@@ -48,6 +47,8 @@
 	<project path="packages/apps/Settings" name="los-modded/android_packages_apps_Settings" groups="pdk-fs" />
 	<project path="system/core" name="los-modded/android_system_core" groups="pdk" />
         <project path="prebuilts/abi-dumps/vndk" name="los-modded/android_prebuilts_abi-dumps_vndk" groups="pdk-fs" clone-depth="1" />
+        <remove-project name="platform/external/arm-optimized-routines" />
+        <project path="external/arm-optimized-routines" name="los-modded/external_arm-optimized-routines" />
 
 	<!-- faceunlock -->
         <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
@@ -61,10 +62,6 @@
         <remove-project name="platform/system/security" />
         <project name="android_external_libpng" path="external/libpng" remote="proton" groups="pdk" />
         <project name="android_system_security" path="system/security" remote="proton" groups="pdk" />
-
-        <!-- Project 1CE -->
-        <remove-project name="platform/external/arm-optimized-routines" />
-        <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ice" />
 
         <!-- libgdx -->
         <project path="external/libgdx" name="los-modded/external_libgdx" />
