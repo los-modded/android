@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="caf_system"
+	fetch="https://source.codeaurora.org/quic/la"
+	review="codeaurora.org"
+	revision="refs/tags/LA.QSSI.12.0.r1-04900.03-qssi.0" />
+
+	<!-- vendor/customization
+	<project name="los-modded/vendor_customization" path="vendor/customization" remote="gitlab" revision="lineage-19.0" /> -->
+
+	<!-- vendor/lineage -->
+        <remove-project name="LineageOS/android_vendor_lineage" />
+        <project name="los-modded/android_vendor_lineage" path="vendor/lineage" remote="github" />
+
+	<!-- core -->
+	<remove-project name="LineageOS/android_build_soong" />
+	<remove-project name="LineageOS/android_frameworks_base" />
+	<remove-project name="platform/frameworks/av" />
+	<remove-project name="platform/frameworks/opt/telephony" />
+	<remove-project name="platform/frameworks/opt/net/ims" />
+	<remove-project name="LineageOS/android_packages_apps_Settings" />
+	<remove-project name="LineageOS/android_system_core" />
+	<remove-project name="LineageOS/android_lineage-sdk" />
+	<remove-project name="LineageOS/android_build" />
+	<remove-project name="platform/system/libsysprop" />
+	<remove-project name="LineageOS/android_packages_apps_LineageParts" />
+	<project path="build/soong" name="los-modded/android_build_soong" groups="pdk,tradefed" >
+	  <linkfile src="root.bp" dest="Android.bp" />
+	  <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+	</project>
+	<project path="frameworks/base" name="los-modded/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+	<project path="frameworks/opt/telephony" name="los-modded/android_frameworks_opt_telephony" groups="pdk" />
+	<project path="packages/apps/Settings" name="los-modded/android_packages_apps_Settings" groups="pdk-fs" />
+	<project path="system/core" name="los-modded/android_system_core" groups="pdk" />
+        <project path="lineage-sdk" name="los-modded/android_lineage-sdk" />
+        <project path="packages/apps/LineageParts" name="los-modded/android_packages_apps_LineageParts" />
+        <project path="system/libsysprop" name="los-modded/android_system_libsysprop" />
+        <project path="frameworks/av" name="los-modded/android_frameworks_av" />
+        <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" remote="caf_system" />
+	<project path="build/make" name="los-modded/android_build" groups="pdk" >
+		<copyfile src="core/root.mk" dest="Makefile" />
+		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+		<linkfile src="core" dest="build/core" />
+		<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+		<linkfile src="target" dest="build/target" />
+		<linkfile src="tools" dest="build/tools" />
+	</project>
+
+</manifest>
+
