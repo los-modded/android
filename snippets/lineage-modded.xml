@@ -8,9 +8,6 @@
         <remote name="gitlab" fetch="https://gitlab.com/" />
         <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
 
-	<!-- vendor/customization -->
-	<project name="los-modded/vendor_customization" path="vendor/customization" remote="gitlab" revision="lineage-18.1" />
-
 	<!-- launcher -->
   	<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 	<project name="los-modded/android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="rvc" />
