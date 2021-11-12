@@ -51,5 +51,8 @@
 	<!-- ModSettings -->
         <project path="packages/apps/ModSettings" name="los-modded/android_packages_apps_ModSettings" />
 
+	<!-- Camera2 -->
+       	<remove-project name="LineageOS/android_packages_apps_Camera2" />
+
 </manifest>
 
