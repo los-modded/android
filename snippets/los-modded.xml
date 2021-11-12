@@ -48,5 +48,8 @@
 		<linkfile src="tools" dest="build/tools" />
 	</project>
 
+	<!-- ModSettings -->
+        <project path="packages/apps/ModSettings" name="los-modded/android_packages_apps_ModSettings" />
+
 </manifest>
 
