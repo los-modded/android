@@ -14,6 +14,7 @@
 
 	<!-- core -->
 	<remove-project name="LineageOS/android_build_soong" />
+	<remove-project name="LineageOS/android_packages_services_Telephony" />
 	<remove-project name="LineageOS/android_frameworks_base" />
 	<remove-project name="platform/frameworks/av" />
 	<remove-project name="platform/frameworks/opt/telephony" />
@@ -38,6 +39,7 @@
         <project path="system/libsysprop" name="los-modded/android_system_libsysprop" />
         <project path="frameworks/av" name="los-modded/android_frameworks_av" />
         <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" remote="caf_system" />
+        <project path="packages/services/Telephony" name="los-modded/android_packages_services_Telephony" />
 	<project path="build/make" name="los-modded/android_build" groups="pdk" >
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -53,6 +55,9 @@
 
 	<!-- Camera2 -->
        	<remove-project name="LineageOS/android_packages_apps_Camera2" />
+
+        <!-- MotoActions -->
+        <project path="packages/apps/MotoActions" name="los-modded/android_packages_apps_MotoActions" />
 
 </manifest>
 
