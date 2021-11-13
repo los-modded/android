@@ -40,6 +40,7 @@
         <project path="frameworks/av" name="los-modded/android_frameworks_av" />
         <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" remote="caf_system" />
         <project path="packages/services/Telephony" name="los-modded/android_packages_services_Telephony" />
+        <project path="vendor/qcom/opensource/wfd-commonsys" name="los-modded/android_vendor_qcom_opensource_wfd-commonsys" />
 	<project path="build/make" name="los-modded/android_build" groups="pdk" >
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
