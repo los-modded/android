@@ -26,6 +26,7 @@
 	<remove-project name="LineageOS/android_build" />
 	<remove-project name="LineageOS/android_hardware_libhardware" />
 	<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+	<remove-project name="LineageOS/android_vendor_codeaurora_telephony" />
 	<remove-project name="platform/system/libsysprop" />
 	<remove-project name="platform/frameworks/libs/systemui" />
 	<remove-project name="LineageOS/android_packages_apps_LineageParts" />
@@ -48,6 +49,7 @@
         <project path="hardware/libhardware" name="los-modded/android_hardware_libhardware" />
         <project path="frameworks/libs/systemui" name="los-modded/android_frameworks_libs_systemui" />
         <project path="vendor/qcom/opensource/wfd-commonsys" name="los-modded/android_vendor_qcom_opensource_wfd-commonsys" />
+        <project path="vendor/codeaurora/telephony" name="los-modded/android_vendor_codeaurora_telephony" />
 	<project path="build/make" name="los-modded/android_build" groups="pdk" >
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
