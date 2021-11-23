@@ -39,7 +39,6 @@
 	<project path="packages/apps/Settings" name="los-modded/android_packages_apps_Settings" groups="pdk-fs" />
 	<project path="system/core" name="los-modded/android_system_core" groups="pdk" />
         <project path="lineage-sdk" name="los-modded/android_lineage-sdk" />
-        <project path="external/json-c" name="LineageOS/android_external_json-c" revision="lineage-18.1" />
         <project path="packages/apps/LineageParts" name="los-modded/android_packages_apps_LineageParts" />
         <project path="system/libsysprop" name="los-modded/android_system_libsysprop" />
         <project path="frameworks/av" name="los-modded/android_frameworks_av" />
