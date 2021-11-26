@@ -21,6 +21,7 @@
 	<remove-project name="platform/frameworks/opt/telephony" />
 	<remove-project name="platform/frameworks/opt/net/ims" />
 	<remove-project name="LineageOS/android_packages_apps_Settings" />
+	<remove-project name="LineageOS/android_packages_apps_Updater" />
 	<remove-project name="LineageOS/android_system_core" />
 	<remove-project name="LineageOS/android_lineage-sdk" />
 	<remove-project name="LineageOS/android_build" />
