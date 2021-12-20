@@ -3,7 +3,7 @@
 	<remote name="caf_system"
 	fetch="https://source.codeaurora.org/quic/la"
 	review="codeaurora.org"
-	revision="refs/tags/LA.QSSI.12.0.r1-05000.01-qssi.0" />
+	revision="refs/tags/LA.QSSI.12.0.r1-05400-qssi.0" />
 
 	<!-- vendor/customization -->
 	<project name="los-modded/vendor_customization" path="vendor/customization" />
