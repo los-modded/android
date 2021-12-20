@@ -13,6 +13,8 @@
         <project name="los-modded/android_vendor_lineage" path="vendor/lineage" remote="github" />
 
 	<!-- core -->
+	<remove-project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" />
+	<remove-project name="LineageOS/android_packages_services_Telecomm" />
 	<remove-project name="LineageOS/android_build_soong" />
 	<remove-project name="LineageOS/android_packages_services_Telephony" />
 	<remove-project name="LineageOS/android_frameworks_base" />
@@ -20,6 +22,7 @@
 	<remove-project name="LineageOS/android_frameworks_native" />
 	<remove-project name="platform/frameworks/opt/telephony" />
 	<remove-project name="platform/frameworks/opt/net/ims" />
+	<remove-project name="platform/packages/apps/PhoneCommon" />
 	<remove-project name="LineageOS/android_packages_apps_Settings" />
 	<remove-project name="LineageOS/android_packages_apps_Updater" />
 	<remove-project name="LineageOS/android_system_core" />
@@ -32,6 +35,7 @@
 	<remove-project name="platform/system/libsysprop" />
 	<remove-project name="platform/frameworks/libs/systemui" />
 	<remove-project name="LineageOS/android_packages_apps_LineageParts" />
+	<remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
 	<project path="build/soong" name="los-modded/android_build_soong" groups="pdk,tradefed" >
 	  <linkfile src="root.bp" dest="Android.bp" />
 	  <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -40,11 +44,14 @@
 	<project path="frameworks/native" name="los-modded/android_frameworks_native" groups="pdk" />
 	<project path="frameworks/opt/telephony" name="los-modded/android_frameworks_opt_telephony" groups="pdk" />
 	<project path="packages/apps/Settings" name="los-modded/android_packages_apps_Settings" groups="pdk-fs" />
+	<project path="packages/apps/PhoneCommon" name="los-modded/android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
+	<project path="packages/services/Telecomm" name="los-modded/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
 	<project path="system/core" name="los-modded/android_system_core" groups="pdk" />
 	<project path="system/sepolicy" name="los-modded/android_system_sepolicy" groups="pdk" />
         <project path="lineage-sdk" name="los-modded/android_lineage-sdk" />
         <project path="packages/apps/LineageParts" name="los-modded/android_packages_apps_LineageParts" />
         <project path="system/libsysprop" name="los-modded/android_system_libsysprop" />
+        <project path="vendor/qcom/opensource/interfaces" name="los-modded/android_vendor_qcom_opensource_interfaces" />
         <project path="frameworks/av" name="los-modded/android_frameworks_av" />
         <project path="packages/apps/Launcher3" name="los-modded/android_packages_apps_Launcher3" />
         <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" remote="caf_system" />
@@ -52,6 +59,7 @@
         <project path="hardware/libhardware" name="los-modded/android_hardware_libhardware" />
         <project path="frameworks/libs/systemui" name="los-modded/android_frameworks_libs_systemui" />
         <project path="vendor/qcom/opensource/wfd-commonsys" name="los-modded/android_vendor_qcom_opensource_wfd-commonsys" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="los-modded/android_vendor_qcom_opensource_display-commonsys-intf" />
         <project path="vendor/codeaurora/telephony" name="los-modded/android_vendor_codeaurora_telephony" />
 	<project path="build/make" name="los-modded/android_build" groups="pdk" >
 		<copyfile src="core/root.mk" dest="Makefile" />
