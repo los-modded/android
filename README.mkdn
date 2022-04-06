@@ -1,14 +1,14 @@
-LineageOS
+LOS-Modded
 ===========
 
 Getting started
 ---------------
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+To get started with Android/LOS-Modded, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+To initialize your local repository using the LOS-Modded trees, use a command like this:
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
+repo init -u https://github.com/los-modded/android.git -b lineage-19.1
 ```
 Then to sync up:
 ```

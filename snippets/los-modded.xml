@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- vendor/customization -->
+	<project name="los-modded/vendor_customization" path="vendor/customization" />
+
+	<!-- vendor/lineage -->
+        <remove-project name="LineageOS/android_vendor_lineage" />
+        <project name="los-modded/android_vendor_lineage" path="vendor/lineage" remote="github" />
+
+	<!-- core -->
+	<remove-project name="LineageOS/android_frameworks_base" />
+	<remove-project name="LineageOS/android_packages_apps_Settings" />
+	<remove-project name="LineageOS/android_lineage-sdk" />
+	<remove-project name="LineageOS/android_packages_apps_Updater" />
+	<remove-project name="platform/frameworks/libs/systemui" />
+	<project path="frameworks/base" name="los-modded/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+	<project path="packages/apps/Settings" name="los-modded/android_packages_apps_Settings" groups="pdk-fs" />
+        <project path="lineage-sdk" name="los-modded/android_lineage-sdk" />
+        <project path="frameworks/libs/systemui" name="los-modded/android_frameworks_libs_systemui" />
+        <project path="packages/apps/Launcher3" name="los-modded/android_packages_apps_Launcher3" />
+
+	<!-- ModSettings -->
+        <project path="packages/apps/ModSettings" name="los-modded/android_packages_apps_ModSettings" />
+
+        <!-- MotoActions -->
+        <project path="packages/apps/MotoActions" name="los-modded/android_packages_apps_MotoActions" />
+</manifest>
+
